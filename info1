@@ -4,4 +4,37 @@ We have Real Time, Non Real Time and UBI to consider.
 
 We also have to consider optimization of these OS.
 
-Rami this somebranch
+RT mechanism:
+a) Priority based CPU allocation.
+b) Doesn't use Completely Fair Scheduling (CFS) Policy.
+c) Maintains consistent, low latency execution time
+d) used for applications with extremely high determinism requirements.
+e) RTOS makes a promise that no more than a specified maximum amount of time will pass between execution of subroutines. In order to do this, RTOS must also guarantee interrupt latency will never exceed a predefined maximum.
+
+Non RT:
+a) General Purpose Linux kernel.
+
+Container Base Image:
+a) what are the various options
+
+RT support:
+a) support with system tuning to meet performance expectations?
+b) training Support?
+c) bug fixes? do you branch out Ubuntu and fix bugs for customers?
+d) RCA of field issues?
+e) SLA with severity level definition?
+f) validation and testing of any new Ubuntu updates?
+g) how does the support match with the release? what is the oldest they will support? Full Support vs Maintenance Support vs Extended Lifecycle Support.
+h) how do you support ubinize
+i) upgrade for host OS support?  and its upgrade flow compatibility with base OS.
+j) upgrade for base OS support? and its upgrade flow compatibility with host OS.
+
+
+
+
+Non-RT Support:
+a)
+
+
+Related Concepts:
+a) CPU isolation and thread affinity (CPU pinning)
