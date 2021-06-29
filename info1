@@ -14,8 +14,12 @@ e) RTOS makes a promise that no more than a specified maximum amount of time wil
 Non RT:
 a) General Purpose Linux kernel.
 
-Container Base Image:
-a) what are the various options
+Base Image for Containers:
+a) what are the various options - eg stadard, minimal, init, nodejs, etc.
+b) Canonical Ubuntu LTS Docker Image vs Redhat UBI.
+c)
+
+http://crunchtools.com/comparison-linux-container-images/
 
 RT support:
 a) support with system tuning to meet performance expectations?
@@ -28,7 +32,7 @@ g) how does the support match with the release? what is the oldest they will sup
 h) how do you support ubinize
 i) upgrade for host OS support?  and its upgrade flow compatibility with base OS.
 j) upgrade for base OS support? and its upgrade flow compatibility with host OS.
-
+k) in ubuntu -prempt and -rt kernels are no longer developed, focus is now on -lowlatency and -realtime kernels (upstream). Looks for ubuntu we have to update General Puppose Linux and add realtime linux kernel patch. there is no RTOS for ubuntu?
 
 
 
